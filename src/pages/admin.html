@@ -1,0 +1,749 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/admin.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="asidebar">
+            <div class="logo__and__link">
+                <a href="./admin.html" class="logo">
+                    <span class="title">A</span>
+                </a>
+                <hr>
+                <ul class="list__link">
+                    <li class="lists">
+                        <a href="" class="link">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" width="18" height="18" stroke-width="1.5">
+                            <path d="M3 13a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
+                            <path d="M15 9a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
+                            <path d="M9 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
+                            <path d="M4 20h14"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="lists">
+                        <a href="" class="link active">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" width="18" height="18" stroke-width="1.5">
+                                <path d="M14 4h6v6h-6z"></path>
+                                <path d="M4 14h6v6h-6z"></path>
+                                <path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                <path d="M7 7m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="lists">
+                        <a href="" class="link">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" width="18" height="18" stroke-width="1.5">
+                                <path d="M5 3m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z"></path>
+                                <path d="M9 7l6 0"></path>
+                                <path d="M9 11l6 0"></path>
+                                <path d="M9 15l4 0"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="lists">
+                        <a href="" class="link">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" width="18" height="18" stroke-width="1.5">
+                                <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                                <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                <path d="M21 21v-2a4 4 0 0 0 -3 -3.85"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="lists">
+                        <a href="" class="link">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" width="18" height="18" stroke-width="1.5">
+                                <path
+                                    d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z">
+                                </path>
+                                <path d="M9 11v-5a3 3 0 0 1 6 0v5"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom__setting">
+                <span class="icon__btm">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" width="18" height="18" stroke-width="1.5">
+                        <path
+                            d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z">
+                        </path>
+                        <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+                    </svg>
+                </span>
+                <span class="icon__btm">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" width="18" height="18" stroke-width="1.5">
+                        <path d="M12 11v.01"></path>
+                        <path d="M8 11v.01"></path>
+                        <path d="M16 11v.01"></path>
+                        <path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3z"></path>
+                    </svg>
+                </span>
+                <span class="icon__btm">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" width="18" height="18" stroke-width="1.5">
+                        <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"></path>
+                        <path d="M9 12h12l-3 -3"></path>
+                        <path d="M18 15l3 -3"></path>
+                    </svg>
+                </span>
+            </div>
+        </aside>
+
+        <div class="contents">
+            <div class="content">
+                <header class="header__content">
+                    <div class="title">
+                        <span class="text">Homepage</span>
+                    </div>
+                    <div class="search__msg__people">
+                        <div class="flex__search__msg">
+                            <div class="search">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"
+                                    stroke-width="1.5">
+                                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                                    <path d="M21 21l-6 -6"></path>
+                                </svg>
+                                <input type="text" placeholder="Quick Search..." class="input__data">
+                            </div>
+                            <span class="icon__svg">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"
+                                    stroke-width="1.5">
+                                    <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path>
+                                    <path d="M3 7l9 6l9 -6"></path>
+                                </svg>
+                            </span>
+                            <div class="icon__svg">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"
+                                    stroke-width="1.5">
+                                    <path d="M10 6h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3"></path>
+                                    <path d="M17 7m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                </svg>
+                            </div>
+                            <div class=" toggle__button" onclick="togglePanel()">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" width="18" height="18" stroke-width="1.5">
+                                    <path d="M5 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                    <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                    <path d="M19 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                    <path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                    <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                    <path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                    <path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                    <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                    <path d="M19 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="people">
+                            <span class="dropdown__toggle" aria-label="Toggle People">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" width="18" height="18" stroke-width="1.5">
+                                    <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                    <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                    <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                </svg>
+                            </span>
+                        
+                            <div class="dropdown__content">
+                                <div class="person__avatar">
+                                    <div class="person">
+                                        <img class="img__1" src="../assets/images/avatar.png" alt="">
+                                    </div>
+                                    <div class="person">
+                                        <img class="img__2" src="../assets/images/avatar2.png" alt="">
+                                    </div>
+                                    <div class="person">
+                                        <img class="img__3" src="../assets/images/avatar (17).png" alt="">
+                                    </div>
+                                    <div class="person">
+                                        <span class="more__person">+10</span>
+                                    </div>
+                                </div>
+                        
+                                <a href="#" class="invite__people">
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        viewBox="0 0 24 24">
+                                        <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
+                                        <path d="M16 19h6"></path>
+                                        <path d="M19 16v6"></path>
+                                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4"></path>
+                                    </svg>
+                                    <span class="text">Invite</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <main class="content__area">
+                    <div class="content__header">
+                        <h1 class="title">Hello Turja, Good Morning</h1>
+                        <span class="des">Let's check your asset.</span>
+                
+                        <div class="grid__asset">
+                            <div class="asset border__1">
+                                <span class="title">Total Balance</span>
+                                <h2 class="number"> 17,351</h2>
+                                <div class="flex__rank">
+                                    <span class="rank" style="color: var(--color-green-1000);">13.54%</span>
+                                    <span class="detail">grow this month</span>
+                                </div>
+                            </div>
+                            <div class="asset border__2">
+                                <span class="title">Total Balance</span>
+                                <h2 class="number"> 17,351</h2>
+                                <div class="flex__rank">
+                                    <span class="rank" style="color: var(--color-blue-1000);">13.54%</span>
+                                    <span class="detail">this month</span>
+                                </div>
+                            </div>
+                            <div class="asset border__3">
+                                <span class="title">Total Balance</span>
+                                <h2 class="number"> 17,351</h2>
+                                <div class="flex__rank">
+                                    <span class="rank" style="color: var(--color-yellow-1000);">13.54%</span>
+                                    <span class="detail">this week</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__content">
+                        <div class="grid__asset__todolist">
+                            <div class="grid__asset__two">
+                                <h1 class="title">My Asset</h1>
+                                <div class="price__rank">
+                                    <span class="price">$ 1552,221</span>
+                                    <span class="rank">+235.21%</span>
+                                </div>
+                
+                                <div class="grid__asset__content">
+                                    <div class="asset" style="background-color: var(--bg-yellow-100);">
+                                        <span class="icon__svg" style="background-color: var(--bg-yellow-500);">
+                                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="20"
+                                                height="20" stroke-width="1.5">
+                                                <path d="M15 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                                <path d="M6 3m0 3a3 3 0 0 1 3 -3h6a3 3 0 0 1 3 3v0a3 3 0 0 1 -3 3h-6a3 3 0 0 1 -3 -3z">
+                                                </path>
+                                                <path d="M9 9a3 3 0 0 0 0 6h3m-3 0a3 3 0 1 0 3 3v-15"></path>
+                                            </svg>
+                                        </span>
+                                        <p class="total__asset">188 Assets</p>
+                                        <span class="title__asset">Figma File</span>
+                                    </div>
+                                    <div class="asset" style="background-color: var(--bg-blue-100);">
+                                        <span class="icon__svg" style="background-color: var(--bg-blue-500);">
+                                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="20"
+                                                height="20" stroke-width="1.5">
+                                                <path
+                                                    d="M5 19l2.757 -7.351a1 1 0 0 1 .936 -.649h12.307a1 1 0 0 1 .986 1.164l-.996 5.211a2 2 0 0 1 -1.964 1.625h-14.026a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v2">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                        <p class="total__asset">191 Assets</p>
+                                        <span class="title__asset">Mockup Folder</span>
+                                    </div>
+                                    <div class="asset" style="background-color: var(--bg-purple-100);">
+                                        <span class="icon__svg" style="background-color: var(--bg-purple-500);">
+                                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="20"
+                                                height="20" stroke-width="1.5">
+                                                <path d="M6 5h12l3 5l-8.5 9.5a.7 .7 0 0 1 -1 0l-8.5 -9.5l3 -5"></path>
+                                                <path d="M10 12l-2 -2.2l.6 -1"></path>
+                                            </svg>
+                                        </span>
+                                        <p class="total__asset">92 Assets</p>
+                                        <span class="title__asset">Sketch File</span>
+                                    </div>
+                                    <div class="asset" style="background-color: var(--bg-teal-100);">
+                                        <span class="icon__svg" style="background-color: var(--bg-teal-500); ">
+                                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="20"
+                                                height="20" stroke-width="1.5">
+                                                <path d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z">
+                                                </path>
+                                                <path d="M11 4h2"></path>
+                                                <path d="M12 17v.01"></path>
+                                            </svg>
+                                        </span>
+                                        <p class="total__asset">18 Assets</p>
+                                        <span class="title__asset">App Product</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="todolist">
+                                <div class="header__todo">
+                                    <span class="title">To-do List</span>
+                                    <a href="#" class="view__all">View all</a>
+                                </div>
+                                <div class="main__todo">
+                                    <div class="todo" style="border-bottom: 2px solid var(--bg-slate-50);">
+                                        <div class="content__todo">
+                                            <div class="image">
+                                                <img src="../assets/images/google.png" alt="">
+                                            </div>
+                                            <div class="detail">
+                                                <h4 class="title">Google</h4>
+                                                <div class="detail__todo">
+                                                    <span class="total__checkout">15 Checkout <p class="line">|</p> $384.0 Total
+                                                        Amount</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="point">
+                                            46%
+                                        </span>
+                                    </div>
+                                    <div class="todo" style="border-bottom: 2px solid var(--bg-slate-50);">
+                                        <div class="content__todo">
+                                            <div class="image">
+                                                <img src="../assets/images/google-drive.png" alt="">
+                                            </div>
+                                            <div class="detail">
+                                                <h4 class="title">Google Drive</h4>
+                                                <div class="detail__todo">
+                                                    <span class="total__checkout">10 Checkout <p class="line">|</p> $219.0 Total
+                                                        Amount</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="point">
+                                            61%
+                                        </span>
+                                    </div>
+                                    <div class="todo" style="border-bottom: 2px solid var(--bg-slate-50);">
+                                        <div class="content__todo">
+                                            <div class="image">
+                                                <img src="../assets/images/dribble.png" alt="">
+                                            </div>
+                                            <div class="detail">
+                                                <h4 class="title">Dribble Post</h4>
+                                                <div class="detail__todo">
+                                                    <span class="total__checkout">27 Checkout <p class="line">|</p> </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="point">
+                                            57%
+                                        </span>
+                                    </div>
+                                    <div class="todo" >
+                                        <div class="content__todo">
+                                            <div class="image">
+                                                <img src="../assets/images/behance.png" alt="">
+                                            </div>
+                                            <div class="detail">
+                                                <h4 class="title">Behance Case Study</h4>
+                                                <div class="detail__todo">
+                                                    <span class="total__checkout">08 Checkout <p class="line">|</p> </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="point">
+                                            27%
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom__table">
+                        <div class="header__table">
+                            <h3 class="title">Transaction</h3>
+                            <div class="search__and__filter">
+                                <div class="search">
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"
+                                        stroke-width="1.5">
+                                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                                        <path d="M21 21l-6 -6"></path>
+                                    </svg>
+                                    <input type="text" placeholder="Search transaction..." class="input__data">
+                                </div>
+                                <span class="icon__svg">
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"
+                                        stroke-width="1.5">
+                                        <path d="M14 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                                        <path d="M4 6l8 0"></path>
+                                        <path d="M16 6l4 0"></path>
+                                        <path d="M8 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                                        <path d="M4 12l2 0"></path>
+                                        <path d="M10 12l10 0"></path>
+                                        <path d="M17 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                                        <path d="M4 18l11 0"></path>
+                                        <path d="M19 18l1 0"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                
+                        <table class="table__tran">
+                            <thead>
+                                <tr>
+                                    <th class="flex__th">
+                                        <input type="checkbox" name="user1" id="checkbox1" aria-label="Select Surja Sen Das">
+                                        Name
+                                    </th>
+                                    <th class="flex__th">
+                                        Date
+                                    </th>
+                                    <th class="flex__th">
+                                        Type
+                                    </th>
+                                    <th class="flex__th">
+                                        Amount
+                                    </th>
+                                    <th class="flex__th">
+                                        Status
+                                    </th>
+                                    <th class="flex__th">
+                                        
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="user-cell">
+                                        <input type="checkbox" name="user1" id="checkbox1" aria-label="Select Surja Sen Das">
+                                        <div class="image">
+                                            <img src="../assets/images/avatar.png" alt="User avatar">
+                                        </div>
+                                        <span class="text">Surja Sen Das</span>
+                                    </td>
+                                    <td>
+                                        <span class="text">30 Sep 2024, 08:00 AM</span>
+                                    </td>
+                                    <td>
+                                        <span class="text">Withdrawal</span>
+                                    </td>
+                                    <td>
+                                        <span class="text">$500.00</span>
+                                    </td>
+                                    <td>
+                                        <div class="status pending">
+                                            <span class="text__status pending">Pending</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="icon__svg" title="More options">
+                                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"
+                                                stroke-width="1.5" aria-label="More options">
+                                                <path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                                <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                                <path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                            </svg>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="user-cell">
+                                        <input type="checkbox" name="user2" id="checkbox2" aria-label="Select Wachi Bin Majumder">
+                                        <div class="image">
+                                            <img src="../assets/images/avatar2.png" alt="User avatar">
+                                        </div>
+                                        <span class="text">Wachi Bin Majumder</span>
+                                    </td>
+                                    <td>
+                                        <span class="text">05 Oct 2024, 02:00 PM</span>
+                                    </td>
+                                    <td>
+                                        <span class="text">Transfer</span>
+                                    </td>
+                                    <td>
+                                        <span class="text">$250.00</span>
+                                    </td>
+                                    <td>
+                                        <div class="status failed">
+                                            <span class="text__status failed">Failed</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="icon__svg" title="More options">
+                                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"
+                                                stroke-width="1.5" aria-label="More options">
+                                                <path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                                <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                                <path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                            </svg>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="user-cell">
+                                        <input type="checkbox" name="user3" id="checkbox3" aria-label="Select Ahsen Tapader">
+                                        <div class="image">
+                                            <img src="../assets/images/avatar (18).png" alt="User avatar">
+                                        </div>
+                                        <span class="text">Ahsen Tapader</span>
+                                    </td>
+                                    <td>
+                                        <span class="text">08 Oct 2024, 07:30 PM</span>
+                                    </td>
+                                    <td>
+                                        <span class="text">Business</span>
+                                    </td>
+                                    <td>
+                                        <span class="text">$1,250.00</span>
+                                    </td>
+                                    <td>
+                                        <div class="status success">
+                                            <span class="text__status success">Success</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="icon__svg" title="More options">
+                                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"
+                                                stroke-width="1.5" aria-label="More options">
+                                                <path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                                <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                                <path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                            </svg>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="user-cell">
+                                        <input type="checkbox" name="user4" id="checkbox4" aria-label="Select Ofspace LLC">
+                                        <div class="image">
+                                            <img src="../assets/images/avatar (19).png" alt="User avatar">
+                                        </div>
+                                        <span class="text">Ofspace LLC</span>
+                                    </td>
+                                    <td>
+                                        <span class="text">17 Oct 2024, 08:00 PM</span>
+                                    </td>
+                                    <td>
+                                        <span class="text">Advertising</span>
+                                    </td>
+                                    <td>
+                                        <span class="text">$310.99</span>
+                                    </td>
+                                    <td>
+                                        <div class="status success">
+                                            <span class="text__status success">Success</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="icon__svg" title="More options">
+                                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"
+                                                stroke-width="1.5" aria-label="More options">
+                                                <path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                                <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                                <path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                            </svg>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            </table>
+                    </div>
+                </main>
+            </div>
+            <div class="about__info">
+                <div class="header__info">
+                    <div class="flex__icon">
+                        <span class="icon__svg">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" width="18" height="18" stroke-width="1.5">
+                                <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path>
+                                <path d="M3 7l9 6l9 -6"></path>
+                            </svg>
+                        </span>
+                        <span class="icon__svg">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" width="18" height="18" stroke-width="1.5">
+                                <path d="M10 6h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3"></path>
+                                <path d="M17 7m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="profile">
+                        <div class="image">
+                            <img src="../assets/images/avatar (21).png" alt="">
+                        </div>
+                        <span class="name">Angela Leslie</span>
+                    </div>
+                </div>
+                <div class="grid__total__info">
+                    <div class="total__info border__1" >
+                        <div class="top__icon__title">
+                            <span class="icon__svg" style="background-color: var(--bg-blue-500);">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" width="16" height="16" stroke-width="1.5">
+                                    <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"></path>
+                                    <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path>
+                                    <path d="M9 12h6"></path>
+                                    <path d="M9 16h6"></path>
+                                </svg>
+                            </span>
+                            <span class="title">Users</span>
+                        </div>
+                        <div class="amount__and__progress">
+                            <span class="amount">19K</span>
+                            <div class="progressing progress__1" style="background-color: var(--bg-blue-500);"></div>    
+                        </div>
+                    </div>
+                    <div class="total__info border__2">
+                        <div class="top__icon__title">
+                            <span class="icon__svg" style="background-color: var(--bg-yellow-500);">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" width="16" height="16" stroke-width="1.5">
+                                    <path d="M3 12l3 0"></path>
+                                    <path d="M12 3l0 3"></path>
+                                    <path d="M7.8 7.8l-2.2 -2.2"></path>
+                                    <path d="M16.2 7.8l2.2 -2.2"></path>
+                                    <path d="M7.8 16.2l-2.2 2.2"></path>
+                                    <path d="M12 12l9 3l-4 2l-2 4l-3 -9"></path>
+                                </svg>
+                            </span>
+                            <span class="title">Clicks</span>
+                        </div>
+                        <div class="amount__and__progress">
+                            <span class="amount">19K</span>
+                            <div class="progressing progress__2" style="background-color: var(--bg-yellow-500);"></div>
+                        </div>
+                    </div>
+                    <div class="total__info border__3">
+                        <div class="top__icon__title">
+                            <span class="icon__svg" style="background-color: var(--bg-purple-500);">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" width="16" height="16" stroke-width="1.5">
+                                    <path
+                                        d="M11.5 21h-2.926a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304h11.339a2 2 0 0 1 1.977 2.304l-.5 3.248">
+                                    </path>
+                                    <path d="M9 11v-5a3 3 0 0 1 6 0v5"></path>
+                                    <path d="M15 19l2 2l4 -4"></path>
+                                </svg>
+                            </span>
+                            <span class="title">Sales</span>
+                        </div>
+                        <div class="amount__and__progress">
+                            <span class="amount">19K</span>
+                            <div class="progressing progress__3" style="background-color: var(--bg-purple-500);"></div>
+                        </div>
+                    </div>
+                    <div class="total__info border__4">
+                        <div class="top__icon__title">
+                            <span class="icon__svg" style="background-color: var(--bg-teal-500);">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" width="16" height="16" stroke-width="1.5">
+                                    <path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"></path>
+                                    <path d="M16 3v4"></path>
+                                    <path d="M8 3v4"></path>
+                                    <path d="M4 11h16"></path>
+                                    <path d="M8 14v4"></path>
+                                    <path d="M12 14v4"></path>
+                                    <path d="M16 14v4"></path>
+                                </svg>
+                            </span>
+                            <span class="title">Items</span>
+                        </div>
+                        <div class="amount__and__progress">
+                            <span class="amount">178</span>
+                            <div class="progressing progress__4" style="background-color: var(--bg-teal-500);"></div>    
+                        </div>
+                    </div>
+                </div>
+            <div class="date__show">
+                <div class="header__date">
+                    <span class="title" id="monthYear">Sep 2024</span>
+                    <div class="btn__next__prev">
+                        <button class="btn__prev" onclick="changeWeek(-1)">
+                            <!-- Left arrow -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="1.5">
+                                <path d="M15 6l-6 6l6 6"></path>
+                            </svg>
+                        </button>
+                        <button class="btn__next" onclick="changeWeek(1)">
+                            <!-- Right arrow -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="1.5">
+                                <path d="M9 6l6 6l-6 6"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="dates" id="datesContainer">
+                    <!-- Populated dynamically -->
+                </div>
+            </div>
+                <div class="activity__log">
+                    <div class="header__activity">
+                        <span class="title">Activity Log</span>
+                        <a href="#" class="view__all">View All</a>    
+                    </div>
+                    <div class="flex__activity">
+                        <div class="activity">
+                            <div class="profile__detail">
+                                <div class="image"><img src="../assets/images/avatar (21).png" alt=""></div>
+                                <div class="flex__detail">
+                                    <span class="name">Esther Howard</span>
+                                    <p class="des">Deleted 2 Item from Group Files</p>    
+                                </div>    
+                            </div>
+                            <span class="hour__activity">2hrs ago</span>
+                        </div>
+                        <div class="activity">
+                            <div class="profile__detail">
+                                <div class="image"><img src="../assets/images/avatar (24).png" alt=""></div>
+                                <div class="flex__detail">
+                                    <span class="name">Esther Howard</span>
+                                    <p class="des">Deleted 2 Item from Group Files</p>
+                                </div>
+                            </div>
+                            <span class="hour__activity">Just now</span>
+                        </div>
+                        <div class="activity">
+                            <div class="profile__detail">
+                                <div class="image"><img src="../assets/images/avatar (22).png" alt=""></div>
+                                <div class="flex__detail">
+                                    <span class="name">Brooklyn Simmons</span>
+                                    <p class="des">Buy 2 file</p>
+                                </div>
+                            </div>
+                            <span class="hour__activity">4hrs ago</span>
+                        </div>
+                        <div class="activity">
+                            <div class="profile__detail">
+                                <div class="image"><img src="../assets/images/avatar (26).png" alt=""></div>
+                                <div class="flex__detail">
+                                    <span class="name">Wade Warren</span>
+                                    <p class="des">Max 2 Files</p>
+                                </div>
+                            </div>
+                            <span class="hour__activity">5hrs ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../scripts/main.js"></script>
+<script src="../scripts/admin.js"></script>
+</html>
